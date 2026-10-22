@@ -6,9 +6,13 @@
 
 ## Screenshots
 
-| Sign in |
-|:--:|
-| ![Sign in](docs/screenshots/01-login.png) |
+| Sign in | Home | Car details |
+|:--:|:--:|:--:|
+| ![Sign in](docs/screenshots/01-login.png) | ![Home](docs/screenshots/02-home.png) | ![Car details](docs/screenshots/03-car-details.png) |
+
+| Car photos | Papers | Lane chat |
+|:--:|:--:|:--:|
+| ![Car photos](docs/screenshots/04-photos.png) | ![Papers](docs/screenshots/05-documents.png) | ![Lane chat](docs/screenshots/06-lane-chat.png) |
 
 ## Features
 
