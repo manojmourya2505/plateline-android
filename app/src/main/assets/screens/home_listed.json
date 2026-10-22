@@ -1,0 +1,66 @@
+{
+  "id": "home_listed",
+  "version": 2,
+  "nav": "home",
+  "children": [
+    {
+      "type": "greeting",
+      "action": {
+        "type": "navigate",
+        "route": "notifications"
+      },
+      "title": "Hey {firstName}",
+      "subtitle": "Your car is live"
+    },
+    {
+      "type": "card",
+      "radius": 32,
+      "padding": 20,
+      "action": {
+        "type": "navigate",
+        "route": "listingDetail"
+      },
+      "children": [
+        {
+          "type": "heading",
+          "title": "{listingCar}",
+          "size": 20,
+          "subtitle": "Listed on Plateline"
+        },
+        {
+          "type": "plate",
+          "text": "{listingPlate}",
+          "height": 72,
+          "fontSize": 44
+        },
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "—",
+              "label": "offers"
+            },
+            {
+              "value": "{listingPriceShort}",
+              "label": "estimate"
+            },
+            {
+              "value": "Live",
+              "label": "listing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "lane_row",
+      "title": "Lane",
+      "subtitle": "Ask about your car or offers.",
+      "buttonLabel": "Ask Lane",
+      "action": {
+        "type": "navigate",
+        "route": "lane"
+      }
+    }
+  ]
+}

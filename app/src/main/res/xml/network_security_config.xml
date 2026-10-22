@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Lets the app talk to the Lane server over plain HTTP: over USB (adb reverse) and on the local Wi-Fi. -->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">127.0.0.1</domain>
+        <domain includeSubdomains="false">192.168.29.213</domain>
+    </domain-config>
+</network-security-config>

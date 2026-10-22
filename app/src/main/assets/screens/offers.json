@@ -1,0 +1,12 @@
+{
+  "id": "offers",
+  "version": 1,
+  "nav": "offers",
+  "children": [
+    {"type": "spacer", "height": 12},
+    {"type": "heading", "title": "Offers", "size": 30, "subtitle": "3 dealers want your Fiesta"},
+    {"type": "offer", "dealer": "Sharma Motors (sample)", "price": "{offerA}", "collect": "Collect Friday · Sample offer", "best": true, "action": {"type": "navigate", "route": "offerDetail", "args": {"offer": "0"}}},
+    {"type": "offer", "dealer": "Kapoor Auto Traders (sample)", "price": "{offerB}", "collect": "Collect Saturday · Sample offer", "best": false, "action": {"type": "navigate", "route": "offerDetail", "args": {"offer": "1"}}},
+    {"type": "offer", "dealer": "Verma Car Bazaar (sample)", "price": "{offerC}", "collect": "Collect Monday · Sample offer", "best": false, "action": {"type": "navigate", "route": "offerDetail", "args": {"offer": "2"}}}
+  ]
+}

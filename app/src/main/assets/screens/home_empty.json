@@ -1,0 +1,14 @@
+{
+  "id": "home_empty",
+  "version": 1,
+  "nav": "home",
+  "children": [
+    {"type": "greeting", "action": {"type": "navigate", "route": "notifications"}, "title": "Hey {firstName}", "subtitle": "Ready to sell your car?"},
+    {"type": "card", "radius": 32, "padding": 22, "children": [
+      {"type": "heading", "title": "Sell your car", "size": 24, "subtitle": "Enter your number plate for a price estimate."},
+      {"type": "plate_input"},
+      {"type": "button", "label": "Get my valuation", "action": {"type": "navigate", "route": "valuation", "args": {"plate": "$plate"}}}
+    ]},
+    {"type": "lane_row", "title": "Ask Lane", "subtitle": "How selling works, fees, papers", "action": {"type": "tab", "tab": "lane"}}
+  ]
+}

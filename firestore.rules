@@ -1,0 +1,22 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Profiles: any signed-in device can look a number up (login), but only the owner can create or change it.
+    match /users/{phone} {
+      allow read: if request.auth != null;
+      allow create: if request.auth != null && request.resource.data.uid == request.auth.uid;
+      allow update, delete: if request.auth != null && resource.data.uid == request.auth.uid;
+    }
+    // Listings: same rule as profiles.
+    match /listings/{phone} {
+      allow read: if request.auth != null;
+      allow create: if request.auth != null && request.resource.data.uid == request.auth.uid;
+      allow update, delete: if request.auth != null && resource.data.uid == request.auth.uid;
+    }
+    // Home/offer layouts: read-only for the app. Edited only from the admin seed script.
+    match /screens/{id} {
+      allow read: if request.auth != null;
+      allow write: if false;
+    }
+  }
+}

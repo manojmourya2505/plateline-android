@@ -1,0 +1,16 @@
+*.iml
+.gradle/
+/local.properties
+/.idea
+.DS_Store
+/build
+/app/build
+/captures
+.externalNativeBuild
+.cxx
+
+# Secrets and local-only files
+app/google-services.json
+.firebase-project-id
+*.log
+tools/
